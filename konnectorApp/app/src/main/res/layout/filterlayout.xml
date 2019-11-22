@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:id="@+id/segmented2"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        app:sc_border_width="2dp"
+        app:sc_corner_radius="10dp"
+        android:background="@drawable/gray_without_radius">
+
+        <RadioButton
+            android:id="@+id/button21"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Guys" />
+
+        <RadioButton
+            android:id="@+id/button22"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Girls" />
+
+        <RadioButton
+            android:id="@+id/button23"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Everyone" />
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_icon"
+            android:layout_marginLeft="-5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/gray_without_radius"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Current location"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="(San Francisco)"
+            android:textAllCaps="false"
+            android:textColor="#A8A8A8"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_add_location_black_24dp" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="79dp"
+        android:text="Show me"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@android:color/black" />
+
+
+
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:text="Location"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="340dp"
+        android:text="Distance"
+        android:textColor="@android:color/black" />
+
+    <SeekBar
+        android:id="@+id/progress_sek"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="265dp"
+        android:max="100"
+        android:progressDrawable="@drawable/seek_bar"
+        android:thumb="@drawable/seek_thumn" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="473dp"
+        android:text="Age range"
+        android:textColor="@android:color/black" />
+
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/progress_per"
+        android:layout_width="93dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="319dp"
+        android:text="0%"
+        android:textSize="20dp" />
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+        android:id="@+id/rangeSeekbar4"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:bar_color="#ababab"
+        app:corner_radius="10"
+        app:bar_highlight_color="#FF4500"
+        app:data_type="_integer"
+        app:left_thumb_color="#FF4500"
+        app:left_thumb_color_pressed="#FF4500"
+        app:max_value="100"
+        app:min_value="0"
+        app:right_thumb_color="#FF4500"
+        app:right_thumb_color_pressed="#FF4500" />
+
+    <Button
+
+        android:id="@+id/button5"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/orange"
+        android:text="Save"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="73dp"
+
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="221dp"
+        android:text="0"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:layout_marginBottom="220dp"
+        android:text="-"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="220dp"
+        android:text="100"
+        android:textSize="20dp" />
+
+</RelativeLayout>

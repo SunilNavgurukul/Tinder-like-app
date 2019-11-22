@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/statusbar">
+
+        <Button
+            android:id="@+id/back_button2"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_icon"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="197dp"
+        android:layout_marginRight="197dp"
+        android:layout_marginBottom="418dp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Interested In"
+        />
+
+    <Button
+        android:id="@+id/guys_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="197dp"
+        android:layout_marginRight="197dp"
+        android:layout_marginBottom="360dp"
+        android:background="@drawable/colored_rounded"
+        android:textColor="@drawable/color_change"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-light"
+        android:text="Guys" />
+
+    <Button
+        android:id="@+id/girls_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="364dp"
+        android:background="@drawable/colored_rounded"
+        android:textColor="@drawable/color_change"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-light"
+        android:text="Girls" />
+
+    <Button
+        android:id="@+id/EveryOne_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="293dp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-light"
+        android:background="@drawable/colored_rounded"
+        android:textColor="@drawable/color_change"
+        android:text="Everyone" />
+</RelativeLayout>
